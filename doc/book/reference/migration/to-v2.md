@@ -679,6 +679,11 @@ time, to allow you to test and verify your application first; however, due to
 the configuration in `config/autoload/programmatic-pipeline.global.php`, these
 are now ignored.
 
+If you have used earlier versions of the expressive-skeleton, make sure that 
+you have registered the `Zend\Expressive\Application::ROUTING_MIDDLEWARE`
+as well as `Zend\Expressive\Application::DISPATCH_MIDDLEWARE` inside your
+`middleware_pipeline` configuration.
+
 If you wish to use Whoops in your development environment, you may add the
 following to a local configuration file (e.g., `config/autoload/local.php`):
 
